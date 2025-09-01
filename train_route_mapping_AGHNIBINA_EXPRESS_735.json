@@ -1,0 +1,15 @@
+{
+  "AGHNIBINA_EXPRESS_735": {
+    "route_segments": [
+      "segment_161",
+      "segment_1276",
+      "segment_810",
+      "segment_251",
+      "segment_1184",
+      "segment_837",
+      "segment_760",
+      "segment_760"
+    ],
+    "explanation": "segment_161 connects Dhaka → Biman_Bandar because its start/end coordinates are closest to these stations. segment_1276 connects Biman_Bandar → Gafargaon because its start/end coordinates are closest to these stations. segment_810 connects Gafargaon → Mymensingh because its start/end coordinates are closest to these stations. segment_251 connects Mymensingh → Narundi because its start/end coordinates are closest to these stations. segment_1184 connects Narundi → Jamalpur_Town because its start/end coordinates are closest to these stations. segment_837 connects Jamalpur_Town → Kendua_Bazar because its start/end coordinates are closest to these stations. segment_760 connects Kendua_Bazar → Sarishabari because its start/end coordinates are closest to these stations. segment_760 connects Sarishabari → Tarakandi because its start/end coordinates are closest to these stations."
+  }
+}

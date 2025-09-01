@@ -1,0 +1,14 @@
+{
+  "AGHNIBINA_EXPRESS_735": {
+    "confirmations": [
+      {
+        "user_id": "test_user_123",
+        "timestamp": "2025-09-01T12:33:47.456344",
+        "station_name": "Biman_Bandar",
+        "coordinates": null
+      }
+    ],
+    "last_updated": "2025-09-01T12:33:47.456344",
+    "total_confirmations": 1
+  }
+}
