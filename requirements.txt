@@ -43,3 +43,4 @@ ujson==5.8.0
 
 # Performance monitoring
 py-spy==0.3.14
+flasgger
