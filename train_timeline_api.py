@@ -28,7 +28,35 @@ logger = logging.getLogger(__name__)
 # Initialize Flask app
 app = Flask(__name__)
 CORS(app)
-swagger = Swagger(app)
+
+swagger_template = {
+    "swagger": "2.0",
+    "info": {
+        "title": "TrainJatri Backend API",
+        "description": "Comprehensive train tracking, scheduling, and crowd validation API for Bangladesh Railway",
+        "version": "2.0.0"
+    },
+    "basePath": "/api",  # all your endpoints start with /api
+    "schemes": ["https", "http"]
+}
+
+swagger_config = {
+    "headers": [],
+    "specs": [
+        {
+            "endpoint": "apispec_1",
+            "route": "/apispec_1.json",
+            "rule_filter": lambda rule: True,  # include all endpoints
+            "model_filter": lambda tag: True,  # include all models
+        }
+    ],
+    "static_url_path": "/flasgger_static",
+    "swagger_ui": True,
+    "specs_route": "/apidocs/"
+}
+
+swagger = Swagger(app, template=swagger_template, config=swagger_config)
+
 
 # Initialize backend modules
 data_loader = get_data_loader()
